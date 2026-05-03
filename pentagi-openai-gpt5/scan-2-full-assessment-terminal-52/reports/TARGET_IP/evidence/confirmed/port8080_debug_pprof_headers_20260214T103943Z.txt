@@ -1,0 +1,20 @@
+*   Trying <TARGET_IP>:8080...
+* Connected to <TARGET_IP> (<TARGET_IP>) port 8080
+* using HTTP/1.x
+> HEAD /debug/pprof/ HTTP/1.1
+> Host: <TARGET_IP>:8080
+> User-Agent: curl/8.15.0
+> Accept: */*
+> 
+* Request completely sent off
+< HTTP/1.1 301 Moved Permanently
+< Content-Type: text/html; charset=utf-8
+< Location: /
+< Date: Sat, 14 Feb 2026 10:39:43 GMT
+< 
+* Connection #0 to host <TARGET_IP> left intact
+HTTP/1.1 301 Moved Permanently
+Content-Type: text/html; charset=utf-8
+Location: /
+Date: Sat, 14 Feb 2026 10:39:43 GMT
+

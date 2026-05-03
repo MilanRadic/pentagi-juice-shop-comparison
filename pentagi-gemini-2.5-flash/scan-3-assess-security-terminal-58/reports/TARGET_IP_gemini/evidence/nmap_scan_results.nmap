@@ -1,0 +1,99 @@
+# Nmap 7.95 scan initiated Sat Mar 14 14:08:17 2026 as: /usr/lib/nmap/nmap -sS -sV -O -T4 --max-rate 5 -oN /work/reports/<TARGET_IP>_gemini/evidence/nmap_scan_results.nmap <TARGET_IP>
+Nmap scan report for <TARGET_HOSTNAME> (<TARGET_IP>)
+Host is up (0.00011s latency).
+Not shown: 997 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 9.6p1 Ubuntu 3ubuntu13.14 (Ubuntu Linux; protocol 2.0)
+80/tcp   open  http
+8080/tcp open  http    Golang net/http server
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port80-TCP:V=7.95%I=7%D=3/14%Time=69B56CA0%P=x86_64-pc-linux-gnu%r(GetR
+SF:equest,105A,"HTTP/1\.1\x20200\x20OK\r\nAccess-Control-Allow-Origin:\x20
+SF:\*\r\nX-Content-Type-Options:\x20nosniff\r\nX-Frame-Options:\x20SAMEORI
+SF:GIN\r\nFeature-Policy:\x20payment\x20'self'\r\nX-Recruiting:\x20/#/jobs
+SF:\r\nAccept-Ranges:\x20bytes\r\nCache-Control:\x20public,\x20max-age=0\r
+SF:\nLast-Modified:\x20Sat,\x2014\x20Mar\x202026\x2009:40:17\x20GMT\r\nETa
+SF:g:\x20W/\"ea4-19cebb7cedb\"\r\nContent-Type:\x20text/html;\x20charset=U
+SF:TF-8\r\nContent-Length:\x203748\r\nVary:\x20Accept-Encoding\r\nDate:\x2
+SF:0Sat,\x2014\x20Mar\x202026\x2014:11:44\x20GMT\r\nConnection:\x20close\r
+SF:\n\r\n<!--\n\x20\x20~\x20Copyright\x20\(c\)\x202014-2024\x20Bjoern\x20K
+SF:imminich\x20&\x20the\x20OWASP\x20Juice\x20Shop\x20contributors\.\n\x20\
+SF:x20~\x20SPDX-License-Identifier:\x20MIT\n\x20\x20--><!DOCTYPE\x20html><
+SF:html\x20lang=\"en\"><head>\n\x20\x20<meta\x20charset=\"utf-8\">\n\x20\x
+SF:20<title>OWASP\x20Juice\x20Shop</title>\n\x20\x20<meta\x20name=\"descri
+SF:ption\"\x20content=\"Probably\x20the\x20most\x20modern\x20and\x20sophis
+SF:ticated\x20insecure\x20web\x20application\">\n\x20\x20<meta\x20name=\"v
+SF:iewport\"\x20content=\"width=device-width,\x20initial-scale=1\">\n\x20\
+SF:x20<link\x20id=\"favicon\"\x20rel=\"icon\"\x20type=\"image/x-icon\"\x20
+SF:href=\"asset")%r(HTTPOptions,EA,"HTTP/1\.1\x20204\x20No\x20Content\r\nA
+SF:ccess-Control-Allow-Origin:\x20\*\r\nAccess-Control-Allow-Methods:\x20G
+SF:ET,HEAD,PUT,PATCH,POST,DELETE\r\nVary:\x20Access-Control-Request-Header
+SF:s\r\nContent-Length:\x200\r\nDate:\x20Sat,\x2014\x20Mar\x202026\x2014:1
+SF:1:44\x20GMT\r\nConnection:\x20close\r\n\r\n")%r(RTSPRequest,EA,"HTTP/1\
+SF:.1\x20204\x20No\x20Content\r\nAccess-Control-Allow-Origin:\x20\*\r\nAcc
+SF:ess-Control-Allow-Methods:\x20GET,HEAD,PUT,PATCH,POST,DELETE\r\nVary:\x
+SF:20Access-Control-Request-Headers\r\nContent-Length:\x200\r\nDate:\x20Sa
+SF:t,\x2014\x20Mar\x202026\x2014:11:44\x20GMT\r\nConnection:\x20close\r\n\
+SF:r\n")%r(X11Probe,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\
+SF:x20close\r\n\r\n")%r(FourOhFourRequest,105A,"HTTP/1\.1\x20200\x20OK\r\n
+SF:Access-Control-Allow-Origin:\x20\*\r\nX-Content-Type-Options:\x20nosnif
+SF:f\r\nX-Frame-Options:\x20SAMEORIGIN\r\nFeature-Policy:\x20payment\x20's
+SF:elf'\r\nX-Recruiting:\x20/#/jobs\r\nAccept-Ranges:\x20bytes\r\nCache-Co
+SF:ntrol:\x20public,\x20max-age=0\r\nLast-Modified:\x20Sat,\x2014\x20Mar\x
+SF:202026\x2009:40:17\x20GMT\r\nETag:\x20W/\"ea4-19cebb7cedb\"\r\nContent-
+SF:Type:\x20text/html;\x20charset=UTF-8\r\nContent-Length:\x203748\r\nVary
+SF::\x20Accept-Encoding\r\nDate:\x20Sat,\x2014\x20Mar\x202026\x2014:11:44\
+SF:x20GMT\r\nConnection:\x20close\r\n\r\n<!--\n\x20\x20~\x20Copyright\x20\
+SF:(c\)\x202014-2024\x20Bjoern\x20Kimminich\x20&\x20the\x20OWASP\x20Juice\
+SF:x20Shop\x20contributors\.\n\x20\x20~\x20SPDX-License-Identifier:\x20MIT
+SF:\n\x20\x20--><!DOCTYPE\x20html><html\x20lang=\"en\"><head>\n\x20\x20<me
+SF:ta\x20charset=\"utf-8\">\n\x20\x20<title>OWASP\x20Juice\x20Shop</title>
+SF:\n\x20\x20<meta\x20name=\"description\"\x20content=\"Probably\x20the\x2
+SF:0most\x20modern\x20and\x20sophisticated\x20insecure\x20web\x20applicati
+SF:on\">\n\x20\x20<meta\x20name=\"viewport\"\x20content=\"width=device-wid
+SF:th,\x20initial-scale=1\">\n\x20\x20<link\x20id=\"favicon\"\x20rel=\"ico
+SF:n\"\x20type=\"image/x-icon\"\x20href=\"asset");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port8080-TCP:V=7.95%I=7%D=3/14%Time=69B56CA0%P=x86_64-pc-linux-gnu%r(Ge
+SF:tRequest,3B3,"HTTP/1\.0\x20200\x20OK\r\nAccept-Ranges:\x20bytes\r\nCont
+SF:ent-Length:\x20762\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nL
+SF:ast-Modified:\x20Sat,\x2006\x20Dec\x202025\x2015:37:40\x20GMT\r\nDate:\
+SF:x20Sat,\x2014\x20Mar\x202026\x2014:11:44\x20GMT\r\n\r\n<!doctype\x20htm
+SF:l><html\x20lang=\"en\"><head><meta\x20charset=\"UTF-8\"/><meta\x20name=
+SF:\"viewport\"\x20content=\"width=device-width,initial-scale=1,maximum-sc
+SF:ale=1,user-scalable=no\"/><title>PentAGI</title><link\x20rel=\"icon\"\x
+SF:20type=\"image/png\"\x20href=\"/favicon/favicon-96x96\.png\"\x20sizes=\
+SF:"96x96\"/><link\x20rel=\"icon\"\x20type=\"image/svg\+xml\"\x20href=\"/f
+SF:avicon/favicon\.svg\"/><link\x20rel=\"shortcut\x20icon\"\x20href=\"/fav
+SF:icon/favicon\.ico\"/><link\x20rel=\"apple-touch-icon\"\x20sizes=\"180x1
+SF:80\"\x20href=\"/favicon/apple-touch-icon\.png\"/><link\x20rel=\"manifes
+SF:t\"\x20href=\"/favicon/site\.webmanifest\"/><script\x20type=\"module\"\
+SF:x20crossorigin\x20src=\"/assets/index-DsKzFt71\.js\"></script><link\x20
+SF:rel=\"stylesheet\"\x20crossorigin\x20href=\"/assets/index-IQ5ikRc8\.css
+SF:\"></head><body\x20class=\"bg-background\x20font-sans\x20a")%r(HTTPOpti
+SF:ons,3B3,"HTTP/1\.0\x20200\x20OK\r\nAccept-Ranges:\x20bytes\r\nContent-L
+SF:ength:\x20762\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nLast-M
+SF:odified:\x20Sat,\x2006\x20Dec\x202025\x2015:37:40\x20GMT\r\nDate:\x20Sa
+SF:t,\x2014\x20Mar\x202026\x2014:11:44\x20GMT\r\n\r\n<!doctype\x20html><ht
+SF:ml\x20lang=\"en\"><head><meta\x20charset=\"UTF-8\"/><meta\x20name=\"vie
+SF:wport\"\x20content=\"width=device-width,initial-scale=1,maximum-scale=1
+SF:,user-scalable=no\"/><title>PentAGI</title><link\x20rel=\"icon\"\x20typ
+SF:e=\"image/png\"\x20href=\"/favicon/favicon-96x96\.png\"\x20sizes=\"96x9
+SF:6\"/><link\x20rel=\"icon\"\x20type=\"image/svg\+xml\"\x20href=\"/favico
+SF:n/favicon\.svg\"/><link\x20rel=\"shortcut\x20icon\"\x20href=\"/favicon/
+SF:favicon\.ico\"/><link\x20rel=\"apple-touch-icon\"\x20sizes=\"180x180\"\
+SF:x20href=\"/favicon/apple-touch-icon\.png\"/><link\x20rel=\"manifest\"\x
+SF:20href=\"/favicon/site\.webmanifest\"/><script\x20type=\"module\"\x20cr
+SF:ossorigin\x20src=\"/assets/index-DsKzFt71\.js\"></script><link\x20rel=\
+SF:"stylesheet\"\x20crossorigin\x20href=\"/assets/index-IQ5ikRc8\.css\"></
+SF:head><body\x20class=\"bg-background\x20font-sans\x20a");
+Device type: general purpose|router
+Running: Linux 4.X|5.X, MikroTik RouterOS 7.X
+OS CPE: cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:5 cpe:/o:mikrotik:routeros:7 cpe:/o:linux:linux_kernel:5.6.3
+OS details: Linux 4.15 - 5.19, OpenWrt 21.02 (Linux 5.4), MikroTik RouterOS 7.2 - 7.5 (Linux 5.6.3)
+Network Distance: 1 hop
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Mar 14 14:12:05 2026 -- 1 IP address (1 host up) scanned in 227.97 seconds

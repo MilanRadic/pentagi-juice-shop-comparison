@@ -1,0 +1,44 @@
+*   Trying <TARGET_IP>:80...
+* Connected to <TARGET_IP> (<TARGET_IP>) port 80
+* using HTTP/1.x
+> HEAD / HTTP/1.1
+> Host: <TARGET_IP>
+> User-Agent: curl/8.15.0
+> Accept: */*
+> 
+* Request completely sent off
+< HTTP/1.1 200 OK
+< Access-Control-Allow-Origin: *
+< X-Content-Type-Options: nosniff
+< X-Frame-Options: SAMEORIGIN
+< Feature-Policy: payment 'self'
+< X-Recruiting: /#/jobs
+< Accept-Ranges: bytes
+< Cache-Control: public, max-age=0
+< Last-Modified: Fri, 13 Feb 2026 18:15:30 GMT
+< ETag: W/"1252f-19c58371386"
+< Content-Type: text/html; charset=UTF-8
+< Content-Length: 75055
+< Vary: Accept-Encoding
+< Date: Sat, 14 Feb 2026 10:39:30 GMT
+< Connection: keep-alive
+< Keep-Alive: timeout=5
+< 
+* Connection #0 to host <TARGET_IP> left intact
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Feature-Policy: payment 'self'
+X-Recruiting: /#/jobs
+Accept-Ranges: bytes
+Cache-Control: public, max-age=0
+Last-Modified: Fri, 13 Feb 2026 18:15:30 GMT
+ETag: W/"1252f-19c58371386"
+Content-Type: text/html; charset=UTF-8
+Content-Length: 75055
+Vary: Accept-Encoding
+Date: Sat, 14 Feb 2026 10:39:30 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+

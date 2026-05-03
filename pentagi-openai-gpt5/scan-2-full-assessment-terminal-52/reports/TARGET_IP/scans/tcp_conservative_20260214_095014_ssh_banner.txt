@@ -1,0 +1,3 @@
+Connection to <TARGET_IP> 22 port [tcp/ssh] succeeded!
+SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.14
+Invalid SSH identification string.

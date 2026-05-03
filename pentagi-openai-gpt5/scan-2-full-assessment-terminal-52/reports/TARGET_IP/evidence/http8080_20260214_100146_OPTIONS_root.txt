@@ -1,0 +1,29 @@
+===== 20260214_100146 OPTIONS http://<TARGET_IP>:8080/ =====
+*   Trying <TARGET_IP>:8080...
+* Connected to <TARGET_IP> (<TARGET_IP>) port 8080
+* using HTTP/1.x
+> OPTIONS / HTTP/1.1
+> Host: <TARGET_IP>:8080
+> User-Agent: curl/8.15.0
+> Accept: */*
+> Connection: close
+> 
+* Request completely sent off
+< HTTP/1.1 200 OK
+< Accept-Ranges: bytes
+< Content-Length: 762
+< Content-Type: text/html; charset=utf-8
+< Last-Modified: Sat, 06 Dec 2025 15:37:40 GMT
+< Date: Sat, 14 Feb 2026 10:01:49 GMT
+< Connection: close
+< 
+{ [762 bytes data]
+* shutting down connection #0
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Content-Length: 762
+Content-Type: text/html; charset=utf-8
+Last-Modified: Sat, 06 Dec 2025 15:37:40 GMT
+Date: Sat, 14 Feb 2026 10:01:49 GMT
+Connection: close
+

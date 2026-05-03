@@ -1,0 +1,15 @@
+# Sensitive — ne commit
+*.env
+.env
+.env.local
+*_secret*
+*_token*
+api_keys.txt
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/

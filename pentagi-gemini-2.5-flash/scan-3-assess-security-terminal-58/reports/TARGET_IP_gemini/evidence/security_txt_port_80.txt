@@ -1,0 +1,7 @@
+Contact: mailto:donotreply@owasp-juice.shop
+Encryption: https://keybase.io/bkimminich/pgp_keys.asc?fingerprint=19c01cb7157e4645e9e2c863062a85a8cbfbdcda
+Acknowledgements: /#/score-board
+Preferred-languages: en, ar, az, bg, bn, ca, cs, da, de, ga, el, es, et, fi, fr, ka, he, hi, hu, id, it, ja, ko, lv, my, nl, no, pl, pt, ro, ru, si, sv, th, tr, uk, zh
+Hiring: /#/jobs
+Csaf: http://localhost:3000/.well-known/csaf/provider-metadata.json
+Expires: Sun, 14 Mar 2027 09:40:15 GMT

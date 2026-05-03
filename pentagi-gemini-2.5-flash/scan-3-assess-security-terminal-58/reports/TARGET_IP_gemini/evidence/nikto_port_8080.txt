@@ -1,0 +1,20 @@
+- Nikto v2.5.0/
++ Target Host: <TARGET_IP>
++ Target Port: 8080
++ GET /: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options: 
++ GET /: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/: 
++ SWGHCTLB /: Web Server returns a valid response with junk HTTP methods which may cause false positives.
++ GET /chat/!nicks.txt: WF-Chat 1.0 Beta allows retrieval of user information. See: OSVDB-59646: 
++ GET /chat/!pwds.txt: WF-Chat 1.0 Beta allows retrieval of user information. See: OSVDB-59645: 
++ GET /chat/data/usr: SimpleChat! 1.3 allows retrieval of user information. See: OSVDB-53304: 
++ GET /login/: This might be interesting.
+- Nikto v2.5.0/
++ Target Host: <TARGET_IP>
++ Target Port: 8080
++ GET /: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options: 
++ GET /: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/: 
++ LZZDQGJO /: Web Server returns a valid response with junk HTTP methods which may cause false positives.
++ GET /chat/!nicks.txt: WF-Chat 1.0 Beta allows retrieval of user information. See: OSVDB-59646: 
++ GET /chat/!pwds.txt: WF-Chat 1.0 Beta allows retrieval of user information. See: OSVDB-59645: 
++ GET /chat/data/usr: SimpleChat! 1.3 allows retrieval of user information. See: OSVDB-53304: 
++ GET /login/: This might be interesting.

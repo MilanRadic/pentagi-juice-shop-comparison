@@ -1,0 +1,3 @@
+22/open ssh 
+ 80/open http? 
+ 8080/open http 

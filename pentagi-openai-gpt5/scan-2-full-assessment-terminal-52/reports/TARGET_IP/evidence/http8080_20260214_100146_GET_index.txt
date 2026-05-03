@@ -1,0 +1,18 @@
+===== 20260214_100146 GET http://<TARGET_IP>:8080/index.html =====
+*   Trying <TARGET_IP>:8080...
+* Connected to <TARGET_IP> (<TARGET_IP>) port 8080
+* using HTTP/1.x
+> GET /index.html HTTP/1.1
+> Host: <TARGET_IP>:8080
+> User-Agent: curl/8.15.0
+> Accept: */*
+> Connection: close
+> 
+* Request completely sent off
+< HTTP/1.1 301 Moved Permanently
+< Location: ./
+< Date: Sat, 14 Feb 2026 10:01:49 GMT
+< Content-Length: 0
+< Connection: close
+< 
+* shutting down connection #0

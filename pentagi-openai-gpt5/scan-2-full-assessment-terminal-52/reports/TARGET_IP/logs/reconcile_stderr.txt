@@ -1,0 +1,85 @@
++ set -euo pipefail
++ B=/work/reports/<TARGET_IP>
++ export TZ=UTC
++ TZ=UTC
++ mkdir -p /work/reports/<TARGET_IP>/notes /work/reports/<TARGET_IP>/evidence /work/reports/<TARGET_IP>/logs /work/reports/<TARGET_IP>/scans /work/reports/<TARGET_IP>/evidence/confirmed /work/reports/<TARGET_IP>/evidence/vuln_probe /work/reports/<TARGET_IP>/evidence/assets /work/reports/<TARGET_IP>/notes
++ DISC=/work/reports/<TARGET_IP>/notes/discovered_endpoints.txt
++ '[' -s /work/reports/<TARGET_IP>/notes/discovered_endpoints.txt ']'
+++ mktemp
++ tmp_endpoints=/tmp/tmp.xqRXFS4u5q
++ find /work/reports/<TARGET_IP>/evidence -type f -print0
++ IFS=
++ read -r -d '' f
++ grep -m1 -E '^(GET|HEAD|POST|OPTIONS) ' /work/reports/<TARGET_IP>/evidence/http80_20260214_100146_GET_root.txt
++ IFS=
++ read -r -d '' f
++ grep -m1 -E '^(GET|HEAD|POST|OPTIONS) ' /work/reports/<TARGET_IP>/evidence/http80_20260214_100146_OPTIONS_root.txt
++ IFS=
++ read -r -d '' f
++ grep -m1 -E '^(GET|HEAD|POST|OPTIONS) ' /work/reports/<TARGET_IP>/evidence/confirmed/port8080_debug_vars_20260214T103939Z.txt
++ IFS=
++ read -r -d '' f
++ grep -m1 -E '^(GET|HEAD|POST|OPTIONS) ' /work/reports/<TARGET_IP>/evidence/confirmed/port80_vendor_js_20260214T104002Z.js
++ IFS=
++ read -r -d '' f
++ grep -m1 -E '^(GET|HEAD|POST|OPTIONS) ' /work/reports/<TARGET_IP>/evidence/confirmed/https443_probe_20260214T103934Z.txt
++ IFS=
++ read -r -d '' f
++ grep -m1 -E '^(GET|HEAD|POST|OPTIONS) ' /work/reports/<TARGET_IP>/evidence/confirmed/http80_headers_20260214T103930Z.txt
++ IFS=
++ read -r -d '' f
++ grep -m1 -E '^(GET|HEAD|POST|OPTIONS) ' /work/reports/<TARGET_IP>/evidence/confirmed/port80_headers_for_cookies_20260214T103952Z.txt
++ IFS=
++ read -r -d '' f
++ grep -m1 -E '^(GET|HEAD|POST|OPTIONS) ' /work/reports/<TARGET_IP>/evidence/confirmed/port8080_debug_pprof_headers_20260214T103943Z.txt
++ IFS=
++ read -r -d '' f
++ grep -m1 -E '^(GET|HEAD|POST|OPTIONS) ' /work/reports/<TARGET_IP>/evidence/confirmed/port80_main_js_20260214T103957Z.js
++ IFS=
++ read -r -d '' f
++ grep -m1 -E '^(GET|HEAD|POST|OPTIONS) ' /work/reports/<TARGET_IP>/evidence/confirmed/port8080_metrics_headers_20260214T103948Z.txt
++ IFS=
++ read -r -d '' f
++ grep -m1 -E '^(GET|HEAD|POST|OPTIONS) ' /work/reports/<TARGET_IP>/evidence/confirmed/js_token_storage_matches_20260214T104004Z.txt
++ IFS=
++ read -r -d '' f
++ grep -m1 -E '^(GET|HEAD|POST|OPTIONS) ' /work/reports/<TARGET_IP>/evidence/http8080_20260214_100146_OPTIONS_root.txt
++ IFS=
++ read -r -d '' f
++ grep -m1 -E '^(GET|HEAD|POST|OPTIONS) ' /work/reports/<TARGET_IP>/evidence/auth/test_auth_write_20260214_102001.txt
++ IFS=
++ read -r -d '' f
++ grep -m1 -E '^(GET|HEAD|POST|OPTIONS) ' /work/reports/<TARGET_IP>/evidence/auth/js_token_storage_matches.txt
++ IFS=
++ read -r -d '' f
++ grep -m1 -E '^(GET|HEAD|POST|OPTIONS) ' /work/reports/<TARGET_IP>/evidence/assets/test_asset_20260214_101308.txt
++ IFS=
++ read -r -d '' f
++ grep -m1 -E '^(GET|HEAD|POST|OPTIONS) ' /work/reports/<TARGET_IP>/evidence/test_write_20260214_094200.txt
++ IFS=
++ read -r -d '' f
++ grep -m1 -E '^(GET|HEAD|POST|OPTIONS) ' /work/reports/<TARGET_IP>/evidence/http8080_20260214_100146_HEAD_root.txt
++ IFS=
++ read -r -d '' f
++ grep -m1 -E '^(GET|HEAD|POST|OPTIONS) ' /work/reports/<TARGET_IP>/evidence/http8080_20260214_100146_GET_index.txt
++ IFS=
++ read -r -d '' f
++ grep -m1 -E '^(GET|HEAD|POST|OPTIONS) ' /work/reports/<TARGET_IP>/evidence/.gitkeep
++ IFS=
++ read -r -d '' f
++ grep -m1 -E '^(GET|HEAD|POST|OPTIONS) ' /work/reports/<TARGET_IP>/evidence/https443_20260214_100146_probe.txt
++ IFS=
++ read -r -d '' f
++ grep -m1 -E '^(GET|HEAD|POST|OPTIONS) ' /work/reports/<TARGET_IP>/evidence/http80_20260214_100146_HEAD_root.txt
++ IFS=
++ read -r -d '' f
++ grep -m1 -E '^(GET|HEAD|POST|OPTIONS) ' /work/reports/<TARGET_IP>/evidence/http8080_20260214_100146_GET_root.txt
++ IFS=
++ read -r -d '' f
++ grep -m1 -E '^(GET|HEAD|POST|OPTIONS) ' /work/reports/<TARGET_IP>/evidence/http80_20260214_100146_GET_index.txt
++ IFS=
++ read -r -d '' f
++ '[' -f /work/reports/<TARGET_IP>/logs/http_requests.log ']'
++ grep -E '^(GET|HEAD|POST|OPTIONS) ' /work/reports/<TARGET_IP>/logs/http_requests.log
++ IFS=
++ read -r line

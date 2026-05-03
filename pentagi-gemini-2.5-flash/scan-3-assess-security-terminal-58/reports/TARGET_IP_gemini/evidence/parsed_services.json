@@ -1,0 +1,35 @@
+[
+    {
+        "host": "<TARGET_IP>",
+        "service": {
+            "port": 22,
+            "protocol": "tcp",
+            "name": "ssh",
+            "product": "OpenSSH",
+            "version": "",
+            "extrainfo": "9.6p1 Ubuntu 3ubuntu13.14 (Ubuntu Linux; protocol 2.0)"
+        }
+    },
+    {
+        "host": "<TARGET_IP>",
+        "service": {
+            "port": 80,
+            "protocol": "tcp",
+            "name": "http",
+            "product": "",
+            "version": "",
+            "extrainfo": ""
+        }
+    },
+    {
+        "host": "<TARGET_IP>",
+        "service": {
+            "port": 8080,
+            "protocol": "tcp",
+            "name": "http",
+            "product": "Golang",
+            "version": "",
+            "extrainfo": "net/http server"
+        }
+    }
+]

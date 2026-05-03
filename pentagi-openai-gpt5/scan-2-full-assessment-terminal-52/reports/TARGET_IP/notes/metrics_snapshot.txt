@@ -1,0 +1,11 @@
+Ports: 3
+Endpoints enumerated: 0
+Endpoints per port: 80=0, 8080=0
+Inputs tested: 0
+HTTP requests recorded: 514
+Runtime window: from 2026-02-14T09:42:00Z to 2026-02-14T11:10:49Z UTC
+Findings by severity:
+  High: 0
+  Medium: 0
+  Low: 0
+  Info: 0
