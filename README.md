@@ -22,7 +22,6 @@ Magistrska naloga (Milan Krka) — primerjava avtomatiziranih penetracijskih tes
 | PentAGI | latest (vxcontrol/pentagi) | LLM agent orchestrator (port 8080) |
 | OpenAI GPT-5 | gpt-5 | LLM #1 |
 | Google Gemini | gemini-2.5-flash | LLM #2 |
-| Ollama Llama 3.1 8B | llama3.1:8b | LLM #3 (early test, brez ohranjenih artefaktov) |
 
 ---
 
